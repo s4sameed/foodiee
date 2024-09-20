@@ -1,0 +1,152 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.logo {
+    height: 8rem;
+    width: auto;
+    object-fit: contain;
+}
+
+
+.nav-links ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+.nav-links ul li {
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links ul li:hover {
+    color: #c40000;
+}
+
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.nav-links ul li a:hover {
+    color: #c40000;
+}
+
+
+.body {
+    padding: 2rem;
+    background-color: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+
+.search-box {
+    margin-bottom: 2rem;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-size: 1rem;
+}
+
+
+.filter-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 2rem;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+
+.res-card {
+    width: calc(20% - 1rem); /* Adjust width to allow for 5 cards */
+    min-height: 400px; /* Keep the same minimum height */
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+.res-card img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for images */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.res-card h3 {
+    margin: 0.5rem 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.res-card h5 {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+
+.res-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.filter {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.top-rated-res-filter-btn {
+    padding: 0.5rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #d4af37;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.top-rated-res-filter-btn:hover {
+    background-color: #b59429;
+}

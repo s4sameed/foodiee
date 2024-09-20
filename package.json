@@ -1,0 +1,30 @@
+{
+  "name": "foodiee",
+  "version": "1.0.0",
+  "description": "food delivery frontend application built using ReactJS",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s4sameed/foodiee.git"
+  },
+  "keywords": [
+    "foodie"
+  ],
+  "author": "Sameed",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s4sameed/foodiee/issues"
+  },
+  "homepage": "https://github.com/s4sameed/foodiee#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
