@@ -1,10 +1,12 @@
+import foodie from '../assets/foodie.png';
+
 const Header = () => {
     return (
         <div className="header">
             <div className="logo-container">
                 <img
                     className="logo"
-                    src=""
+                    src={foodie}
                 />
             </div>
             <div className="nav-links">
