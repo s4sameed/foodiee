@@ -414,3 +414,30 @@
     color: #cb202d;
     margin-top: 5px;
 }
+
+.github-profile {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .github-profile img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .github-profile h3 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px 0;
+  }
+  
+  .github-profile a {
+    font-size: 16px;
+    color: #0366d6;
+    text-decoration: none;
+  }
+  
+  .github-profile a:hover {
+    text-decoration: underline;
+  }

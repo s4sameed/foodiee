@@ -1,3 +1,5 @@
+import DeveloperInfo from "./DeveloperInfo";
+
 const About = () => {
     return (
         <div className="about-container">
@@ -26,6 +28,9 @@ const About = () => {
                     <p>
                         We believe in quality, speed, and customer satisfaction. Our dedicated team works around the clock to ensure your food arrives hot and fresh every time.
                     </p>
+                </section>
+                <section className="about-section">
+                    <DeveloperInfo name={"Sameed"}/>
                 </section>
             </div>
         </div>
