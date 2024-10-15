@@ -13,7 +13,6 @@ class DeveloperInfo extends React.Component{
     async componentDidMount(){
         const data = await fetch("https://api.github.com/users/s4sameed")
         const json = await data.json();
-        console.log(json)
         this.setState({
             user: json
         })
