@@ -22,20 +22,21 @@ const RestaurantMenu = () => {
     }
 
     return (
-        <div className="restaurant-menu-container">
-            <div className="restaurant-header">
-                <h1 className="restaurant-name">{name}</h1>
-                <h3 className="restaurant-cuisines">{cuisines.join(", ")}</h3>
-                <p className="restaurant-cost">{costForTwoMessage}</p>
+        <div className="restaurant-menu-container p-4">
+            <div className="restaurant-header mb-6 text-center">
+                <h1 className="restaurant-name text-3xl font-bold mb-2">{name}</h1>
+                <h3 className="restaurant-cuisines text-lg text-gray-600 mb-2">{cuisines.join(", ")}</h3>
+                <p className="restaurant-cost text-md text-gray-500">{costForTwoMessage}</p>
             </div>
 
             <div className="menu-section">
-                <div className="menu-grid">
+                <h2 className="text-2xl font-semibold mb-4">Menu</h2>
+                <div className="menu-grid grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
                     {items.map((item) => (
-                        <div key={item.card.info.id} className="menu-card">
-                            <div className="menu-card-content">
-                                <h4>{item.card.info.name}</h4>
-                                <p className="menu-item-price">₹{item.card.info.price / 100 || item.card.info.defaultPrice /100}</p>
+                        <div key={item.card.info.id} className="menu-card bg-white shadow-md rounded-lg overflow-hidden">
+                            <div className="menu-card-content p-4">
+                                <h4 className="text-lg font-semibold">{item.card.info.name}</h4>
+                                <p className="menu-item-price text-xl font-bold text-red-500">₹{item.card.info.price / 100 || item.card.info.defaultPrice / 100}</p>
                             </div>
                         </div>
                     ))}
